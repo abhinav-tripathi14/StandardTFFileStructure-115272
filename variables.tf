@@ -27,3 +27,8 @@ variable "subnet_name" {
   description = "The name of the existing subnet that will be used by the ithc infrastructure"
   default     = "benh-azure-infra-subnet"
 }
+variable "common_resource_name" {
+  type        = string
+  description = "The common resource to be used as a prefix for all resources created within the ithc resource group"
+default = "testabhinav"
+}
