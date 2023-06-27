@@ -4,11 +4,6 @@ variable "azure_region" {
   default     = "uksouth"
 }
 
-variable "common_resource_name" {
-  type        = string
-  description = "The common resource to be used as a prefix for all resources created within the ithc resource group"
-}
-
 variable "resource_group_name" {
   type        = string
   description = "The name of the resource group in which to create the ithc infrastructure"
@@ -31,9 +26,4 @@ variable "subnet_name" {
   type        = string
   description = "The name of the existing subnet that will be used by the ithc infrastructure"
   default     = "benh-azure-infra-subnet"
-}
-
-variable "admin_ssh_key" {
-  type        = string
-  description = "The admin ssh public key to assign to this host for adminstration purposes"
 }
