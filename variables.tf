@@ -32,3 +32,8 @@ variable "common_resource_name" {
   description = "The common resource to be used as a prefix for all resources created within the ithc resource group"
 default = "testabhinav"
 }
+variable "admin_ssh_key" {
+  type        = string
+  description = "The admin ssh public key to assign to this host for adminstration purposes"
+default = "test-key"
+}
